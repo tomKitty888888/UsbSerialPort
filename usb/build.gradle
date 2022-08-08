@@ -3,7 +3,7 @@ plugins {
     id 'kotlin-android'
 }
 group = 'com.github.tomKitty888888'
-version = '1.0.3'
+version = '1.0.1'
 
 android {
     compileSdk 32
