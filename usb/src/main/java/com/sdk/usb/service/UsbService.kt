@@ -26,6 +26,7 @@ import java.util.concurrent.Executors
 import com.hoho.android.usbserial.driver.UsbSerialPort
 import com.hoho.android.usbserial.util.SerialInputOutputManager
 import com.sdk.usb.R
+import org.example.adc.service.impl.ADCService55Impl
 
 
 class UsbService :Service(){
@@ -69,8 +70,15 @@ class UsbService :Service(){
     }
     private var callBack : CallBack? = null
     interface CallBack{
+        /**
+         * data 串口接收数据
+         */
          fun onNewData(data: ByteArray)
-         fun onRunError(e: Exception)
+
+        /**
+         * 串口异常
+         */
+        fun onRunError(e: Exception)
     }
 
 
