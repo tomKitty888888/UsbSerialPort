@@ -65,6 +65,7 @@ class MainActivity : AppCompatActivity(), UsbService.CallBack {
     }
 
 
+
     /**
      * 获取设备控制指令
      *
